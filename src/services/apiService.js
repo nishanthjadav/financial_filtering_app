@@ -4,7 +4,7 @@
 // to fetch filtered and sorted data. It constructs query parameters from the filters and sort criteria, 
 // sends the request, and processes the response.
 
-const API_URL = "http://localhost:5000/fetch_data"; // Flask backend endpoint
+const API_URL = "https://flask-server-44hihy117-nishanth-jadavs-projects.vercel.app/fetch_data"; // Flask backend endpoint
 
 // Fetches data from the backend with the specified filters and sorting criteria
 export const fetchData = async (filters, sortBy) => {
