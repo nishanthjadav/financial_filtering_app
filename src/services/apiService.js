@@ -15,12 +15,11 @@ export const fetchData = async (filters, sortBy) => {
 
         // Send GET request to the API endpoint with the query parameters
         const response = await fetch(`${API_URL}?${queryParams.toString()}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            mode: 'no-cors', // Ensure CORS mode is enabled
-        });
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+});
         // If the response is not OK (status code not in the range 200-299), throw an error
         if (!response.ok) {
             throw new Error("Failed to fetch data");
