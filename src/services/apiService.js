@@ -19,7 +19,7 @@ export const fetchData = async (filters, sortBy) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            mode: 'cors', // Ensure CORS mode is enabled
+            mode: 'no-cors', // Ensure CORS mode is enabled
         });
         // If the response is not OK (status code not in the range 200-299), throw an error
         if (!response.ok) {
